@@ -20,6 +20,6 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Publish to GitHub Packages Apache Maven
-        run: java -jar /home/runner/work/spring-boot-hello/spring-boot-hello/target/spring-boot-hello-1.0.jar
+        run: java -jar /home/runner/work/spring-boot-hello/spring-boot-hello/target/spring-boot-hello-1.0.jar &
         env:
           GITHUB_TOKEN: ${{ secrets.SHOWDOC }}
